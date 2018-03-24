@@ -1,0 +1,36 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body, button, a{
+    transition: background-color 2.5s;
+    color: white;
+}
+
+body {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#quote-box {
+    display: table;
+    border-radius: 3px;
+    padding: 50px;
+    position: relative;
+    background-color: white;
+    margin: 8% auto auto auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+#quote {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.75em;
+    transition: color 2.5s;
+}
+
+.button {
+    margin: auto 10px auto auto;
+}

@@ -25,16 +25,19 @@ let getQuote = () => {
         },
         
         success: function(response)   {
-          
-          text = response.quoteText;
-          author = response.quoteAuthor;
-          $("#text").text(text);
-          
-          if (author)   {
-            $("#author").text("- " + author);
-          } else  {
-            $("#author").text(" ~ Unknown");
-          }
+
+            $("#demo").html("It's working!");
+            
+            text = response.quoteText;
+            author = response.quoteAuthor;
+            $("#text").text(text);
+            
+            if (author)   {
+                $("#author").text("- " + author);
+            } else  {
+                $("#author").text(" ~ Unknown");
+            }
+
         }
     });
 

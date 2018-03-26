@@ -46,5 +46,6 @@ let getQuote = () => {
 $(document).ready(function() {
     getQuote();
     $("#new-quote").click(getQuote);
+    console.log("test4");
 });
 

@@ -1,5 +1,8 @@
 let getQuote = () => {
 
+    $("#text").text("Loading quote...");
+    $("#author").text("Loading author...");
+
     let text, author;
 
     let randomColor = "#" + Math.floor(Math.random() * 999999);

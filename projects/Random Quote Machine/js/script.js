@@ -25,8 +25,6 @@ let getQuote = () => {
         },
         
         success: function(response)   {
-
-            $("#demo").html("It's working!");
             
             text = response.quoteText;
             author = response.quoteAuthor;
@@ -46,6 +44,5 @@ let getQuote = () => {
 $(document).ready(function() {
     getQuote();
     $("#new-quote").click(getQuote);
-    console.log("test4");
 });
 

@@ -72,9 +72,10 @@ const convertFromBToDec = () => {
 	console.log('string: ' + number_as_string);
 	let splitString = number_as_string.split('');
 	console.log('split string: ' + splitString);
-	let reverseArray = splitString.reverse();
+	//let reverseArray = splitString.reverse();
     // split string
-	console.log('split string reversed: ' + reverseArray);
+	//console.log('split string reversed: ' + reverseArray);
+	/* -- 1° method --
 	for(let i = 0; i < splitString.length; i++) {
 		for(let j = 0; j < letters.length; j++) {
 			if(reverseArray[i] == letters[j]) {
@@ -82,8 +83,23 @@ const convertFromBToDec = () => {
 			}
 		}
 		sum += parseInt(reverseArray[i]) * this.base ** i;
-		//if(i < splitString)
+	} */
+
+	// -- 2° method (double-dabble) --
+	for(let i = 0; i < splitString.length ; i++) {
+		for(let j = 0; j < letters.length; j++) {
+			if(splitString[i] == letters[j]) {
+				splitString[i] = 10 + j;
+			}
+		}
+		if(i < splitString.length - 1) {
+			sum = (sum + parseInt(splitString[i])) * this.base;
+		}
+		else {
+			sum = sum + parseInt(splitString[i]);
+		}
 	}
+	console.log(sum);
 	return sum;
 }
 

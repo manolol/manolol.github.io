@@ -9,8 +9,8 @@ const showPosition = (position) => {
     $.getJSON(api, function(data) {
         // Getting Weather Details
         $("#place").html("Location: " + data.name + ", " + data.sys.country);
-        $("#temp").html("Temperature: " + data.main.temp + " C°");
-        $("#min").html("Min: " + data.main.temp_min + ", ");
+        $("#temp").html(data.main.temp + " C°");
+        //$("#min").html("Min: " + data.main.temp_min + ", ");
         $("#max").html("Max: " + data.main.temp_max);
         $("#weather").html(data.weather[0].main);
         $("#weather-description").html("(" + data.weather[0].description + ")");

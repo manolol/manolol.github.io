@@ -6,12 +6,19 @@ body{
     text-align: center;
 }
 
+span{
+    font-size: 20px;
+}
+
 #title{
     margin-top: 30px;
     font-size: 80px;
 }
 
-#change-background{
-    margin-top: 10px;
-    text-align: right;
+#temp{
+    font-size: 60px;
+}
+
+#credits{
+    font-size: 15px;
 }

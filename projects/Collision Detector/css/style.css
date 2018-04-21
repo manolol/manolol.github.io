@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+#ball{
+    height: 25px;
+    width: 25px;
+    border-radius: 100%; /* circle */
+    background-color: blue;
+    position: fixed;
+    top: 50%; /*to center vertically*/
+    left: 55%; /*to center horizontally*/
+    transform: translate(-55%, -50%);
+}
+
+#ball_2{
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    background-color: red;
+    position: fixed;
+    top: 50%;
+    left: 45%;
+    transform: translate(-45%, -50%);
+}
+
+#ball_hc{
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    background-color: red;
+    left: 50%;
+    top: 50%;
+    position: fixed	;	
+    transform: translate(-50%, -50%);
+}
+
+#hc{
+    background-color: black;
+    color: white;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+h3{
+    font-size: 30px;
+    text-align: center;
+}
+
+p{
+    font-weight: bold;
+}
+
+#blue{
+    color: blue;
+}
+
+#red{
+    color: red;
+}
